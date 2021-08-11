@@ -1,0 +1,137 @@
+
+--dark-backround {
+    color: darkgrey;
+}
+--light-backround {
+    color: lightblue;
+}
+--alt-backround {
+    color: lightcoral;
+}
+--basic-text{
+    color: white;
+}
+
+
+*{
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
+}
+
+.nav {
+    height: 80px;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    background-color: rgb(89, 113, 153);
+    
+}
+
+.nav ul {
+    margin-bottom: 10px;
+    list-style-type: none;
+    background-color: transparent;
+    float: right;
+}
+
+.nav ul li {
+    display: inline-block;
+    background-color: lightcoral;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: flex-end;
+}
+
+.nav h1{
+    display: inline-block;
+    background-color: lightcoral;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+
+
+.post-nav {
+    border-right: 10px;
+    border-color: black;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./images/greyWood.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    display: block;
+}
+
+.post-nav-text{
+    color: white;
+    float: right;
+    background-color: transparent;
+    text-align: right;
+    background-color: lightcoral;
+}
+
+
+
+.me {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+link{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+ 
+}
+
+.content h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+    padding: 10px;
+    border-left: 5px solid black;
+    width: 75px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content p{
+    display: inline-block;
+}
+
+.audi img{
+    height: 125px;
+    width: 125px;
+}
+
+.refractor img{
+    height: 125px;
+    width: 125px;
+}
+
+.speaker img{
+    height: 125px;
+    width: 125px;
+}
+
+.honda img{
+    height: 125px;
+    width: 125px;
+}
