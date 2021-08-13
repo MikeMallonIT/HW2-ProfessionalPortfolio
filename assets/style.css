@@ -1,25 +1,31 @@
+/*Variables*/
 :root{
     --primary-color: rgb(29,31,38);
     --secondary-color: rgb(166, 152, 151);
     --tertiary-color: black;
-
     --borders: black;
-    
 }
 
-
+/*Site-wide styles*/
 *{
     text-decoration: none;
 }
 
 
+
+/*Style for all links on the website*/
+link{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Styles for the navigation bar at the very top*/
 .nav {
     height: 80px;
     width: 100%;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 24px;
     background-color: var(--primary-color);
-    
 }
 
 .nav ul {
@@ -46,65 +52,71 @@
     color: var(--secondary-color);
 }
 
-
-
+/*Styles for the header that comes after the navigation bar*/
 .post-nav {
-    border-right: 10px;
-    border-color: black;
     height: 150px;
     width: 100%;
-    margin-bottom: 25px;
     background-image: url("./images/greyWood.jpg");
     background-size: cover;
     background-position: center;
-    font-family: sans-serif;
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 
-.post-nav-text{
-    color: white;
-    float: right;
-    background-color: transparent;
-    text-align: right;
-    background-color: var(--secondary-color);
-}
-
-
-
+/*Headshot*/
 .me {
     height: 125px;
     width: 125px;
     border-radius: 50%;
     margin: 15px;
-}
-
-link{
-    cursor: pointer;
-    text-decoration: underline;
+    box-sizing: border-box;
 }
 
 
+/*"ready for action*/
+.catch-phrase{
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 60%;
+    margin-top: 80px;
+    text-align: center;
+}
+
+/*General styles for "about me" , "stuff I've been working on" and "let's keep in touch" section*/
 .content {
-    width: 75%;
+
     display: inline-block;
     margin-left: 20px;
- 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
 }
+
 
 .content h2{
     margin-bottom: 20px;
+    margin-right: 20px;
     font-size: 36px;
     padding: 10px;
     border-left: 5px solid black;
-    width: 75px;
+    width: 120px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.content p{
-    display: inline-block;
+.bio{
+    width: 80%;
+    padding-top: 15px;
+}
+
+.bio p{
     font-family: 'open sans condensed', sans-serif;
 }
 
+/*indvidual styles for the images in the project articles*/
 .audi img{
     height: 125px;
     width: 125px;
@@ -125,13 +137,36 @@ link{
     width: 125px;
 }
 
-.content div {
-    list-style-type: none;
-    display: inline-block;
-}
 
-
-
+/*Set color for text in <a> tags*/
 a{
     color: var(--secondary-color)
+}
+
+/*Styles for "let's keep in touch"*/
+footer div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+footer div ul {
+    list-style-type: none;
+    float: inline-end;
+}
+
+footer div ul li {
+    display: inline-block;
+
+    margin-top: auto;
+    padding-bottom: 5px;
+
+    height: 100px;
+    width: 150px;
+}
+
+.vectors{
+    height: 50px;
+    width: 50px;
 }
