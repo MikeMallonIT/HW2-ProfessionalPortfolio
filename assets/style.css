@@ -94,6 +94,7 @@ link{
     margin-bottom: 5px;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 
@@ -117,6 +118,11 @@ link{
 }
 
 /*indvidual styles for the images in the project articles*/
+.projects{
+    
+}
+
+
 .audi img{
     height: 125px;
     width: 125px;
@@ -144,26 +150,27 @@ a{
 }
 
 /*Styles for "let's keep in touch"*/
-footer div{
+.footer{
+    width: 100%;
+    margin-top: 75px;
+}
+
+.footer ul{
+
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 60px;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+
 }
 
-footer div ul {
+
+.footer ul li {
+    display: block;
+    flex: 0 1 auto; /* Default */
     list-style-type: none;
-    float: inline-end;
-}
-
-footer div ul li {
-    display: inline-block;
-
-    margin-top: auto;
-    padding-bottom: 5px;
-
-    height: 100px;
-    width: 150px;
+    padding-right: 75x;
 }
 
 .vectors{
