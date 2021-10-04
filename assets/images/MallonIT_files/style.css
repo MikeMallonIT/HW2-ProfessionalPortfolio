@@ -1,0 +1,102 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+    margin-left: -4px;
+    background-image: url('.//images/danny-sleeuwenhoek-9uZX2taqn_k-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: -5px;
+}
+
+a{
+    color: black;
+}
+
+nav{
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 75px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+
+nav h1{
+    text-align: center;
+    padding-left: 5px;
+    font-size: x-large;
+}
+
+nav div{
+
+    writing-mode:vertical-rl;
+    transform: rotate(-180deg);
+    padding: 40%;
+
+}
+
+nav div a{
+    margin: 40px;
+    font-size: large;
+
+}
+
+header{
+    position:absolute;
+    width: 100%;
+    color: white;
+}
+
+header p{
+    position: absolute;
+    width: auto;
+    margin-left: 200px;
+    margin-top: 50px;
+    font-size: x-large;
+
+}
+
+header ul{
+    float: right;
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    padding: 0;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+
+header ul li {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+.vectors {
+    height: 25px;
+    width: 25px;
+    filter: invert(100%)
+}
+
+
+#hello{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 30%;
+    font-size: xx-large;
+    color: white;
+}
+
+#info{
+    position:absolute;
+    margin-top: 22%;
+    margin-left: 35%;
+    font-size: large;
+    width: 575px;
+    color: white;
+}

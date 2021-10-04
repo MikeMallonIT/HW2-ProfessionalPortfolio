@@ -1,0 +1,328 @@
+html{
+    overflow: hidden;
+}
+
+body{
+
+    margin-top: -10px;
+    margin-left: -4px;
+    background-image: url('../images/danny-sleeuwenhoek-9uZX2taqn_k-unsplash.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: -5px;
+}
+
+a{
+    color: black;
+}
+
+nav{
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 75px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+
+nav h1{
+    text-align: center;
+    padding-left: 5px;
+    font-size: x-large;
+    margin-bottom: 50px;
+}
+
+nav div{
+
+    writing-mode:vertical-rl;
+    transform: rotate(-180deg);
+    padding: 40%;
+
+}
+
+nav div a{
+    
+    font-size: large;
+    margin-top: 50px;
+}
+
+header{
+    position:absolute;
+    min-width: 100%;
+    color: white;
+    overflow-wrap: normal;
+}
+
+#socials{
+    float: right;
+}
+
+header p{
+    position: fixed;
+    width: auto;
+    margin-left: 200px;
+    margin-right: 200px;;
+    margin-top: 50px;
+    font-size: x-large;
+
+}
+
+header div ul{
+
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    padding: 0;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+
+header div ul li {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+.vectors {
+    height: 25px;
+    width: 25px;
+    filter: invert(100%)
+}
+
+.git {
+    height: 75px;
+    width: 75px;
+    display:block;
+    margin:auto;
+    padding-top: 50px;
+}
+
+.vectorsi {
+    margin-top: -2.5px;
+    margin-left: -2.5px;
+    height: 30px;
+    width: 30px;
+    filter: invert(100%)
+}
+
+#centerText{
+
+    position: absolute;
+    padding: 100px;
+    margin-top: 4%;
+    margin-left: 25%;
+    margin-right: 50px;
+    width: 700px;
+}
+
+#hello{
+    position:relative;
+    font-size: xx-large;
+    color: white;
+    margin-bottom: -20px;
+}
+
+#info{
+    position:relative;
+    font-size: large;
+    width: 575px;
+    color: white;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.contact{
+
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 0, 1, 1);
+
+
+    position:absolute;
+    color: black;
+    border: 5px solid white;
+    background-color: white;
+
+    min-width: 65%;
+    min-height: 500px;
+
+    width: auto;
+    height: auto;
+
+    max-width: 80%;
+
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.hidden {
+    visibility: hidden;
+	max-height: 0;
+    max-width: 0;
+
+    
+}
+
+#padded{
+    padding: 50px;
+}
+
+.close{
+    height: 25px;
+    width: 25px;
+}
+
+.experience{
+
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 0, 1, 1);
+
+
+    position:absolute;
+    color: black;
+    border: 5px solid white;
+    background-color: white;
+
+    min-width: 65%;
+    min-height: 500px;
+
+    width: auto;
+    height: auto;
+
+    max-width: 80%;
+
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.me {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+#contactInfo{
+    padding: 75px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.portfolio{
+
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 0, 1, 1);
+
+
+    position:absolute;
+    color: black;
+    border: 5px solid white;
+    background-color: white;
+
+    margin-left: 75px;
+}
+
+#portContent{
+    padding: 50px;
+    display: flex;  
+    flex-wrap: wrap;
+
+}
+
+#portHeader{
+    width: 100%;
+    margin-left: 25px;
+}
+
+.project{
+    height: 253px;
+    width: 450px;
+    margin: 15px;
+    border-radius: 15px;
+    border: black solid 2px;
+}
+
+#projectDescription{
+    
+    visibility: hidden;
+    margin-top: 175px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.projectInfo{
+    visibility: visible;
+    padding:10px;
+    height: 233px;
+    width: 430px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+}
+
+.project h2{
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    width: auto;
+    margin-bottom: -17px;
+    padding-top: 5px;
+}
+
+.project p{
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    width: auto;
+    font-size: smaller;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+#project1{
+    background-image: url('../images/projects/weather.png');
+    background-position: center;
+    background-size:contain;
+    filter: grayscale(100%);
+}
+
+#project1:hover{ filter:none; }
+#project1:hover #projectDescription { visibility: visible; }
+
+#project2{
+    background-image: url('../images/projects/dfw.png');
+    background-position: center;
+    background-size:contain;
+    filter: grayscale(100%);
+}
+
+#project2:hover{ filter:none; }
+#project2:hover #projectDescription { visibility: visible; }
+
+#project3{
+    background-image: url('../images/projects/quiz.png');
+    background-position: center;
+    background-size:contain;
+    filter: grayscale(100%);
+}
+
+#project3:hover{ filter:none; }
+#project3:hover #projectDescription { visibility: visible; }
+
+#project4{
+    background-image: url('../images/projects/password.png');
+    background-position: center;
+    background-size:contain;
+    filter: grayscale(100%);
+
+}
+
+#project4:hover{ filter:none; }
+#project4:hover #projectDescription { visibility: visible; }

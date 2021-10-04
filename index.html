@@ -1,144 +1,165 @@
-<html lang="en">
-<head>
-    <!--Character encoding-->
-    <meta charset="UTF-8">
-    <!--Title for browser tab-->
-    <title>Mike</title>
-    <!--Link to style sheet-->
-    <link rel="stylesheet" href="./assets/style.css">
-    
-    <!--Links to favicon (formatted on various devices)-->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MallonIT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/style.css">
 
     <!--Links for font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">   
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">  
 
-<body>
-    <!--Navigation menu containing my name on left and hyperlinks on right-->
-    <nav class="nav">
-        <h1>Mike Mallon</h1>
-        <ul>
-            <li><!--Link to bio section-->
-                <a href="#about-me">Bio</a>
-            </li>
-                
-            <li><!--Link to projects section-->
-                <a href="#projects">Projects</a>
-            </li>
+    </head>
+    <body>
+        <!--Top header with name and socials-->
+        <header>
+            <p>Mike Mallon</p>
+            <!--links to socials-->
+            <div id="socials">
+            <ul>
+                <li>
+                    <a href="mailto: mike@mallonit.com"><img class= "vectors" src="./assets/images/email.png" alt="email icon" /></a></li>
+                </li>
+                <li>
+                    <a href="https://github.com/MikeMallonIT/" target="_blank" rel="noopener noreferrer">
+                        <img class= "vectors" src="./assets/images/github.png" alt="github icon" /></a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/michael-mallon-it-guy/" target="_blank" rel="noopener noreferrer">
+                        <img class= "vectors" src="./assets/images/new-linkedin-logo-white-black-png.png" alt="linkedin icon" /></a></li>
+                <li>
+                    <a href="https://www.instagram.com/themikemallon/" target="_blank" rel="noopener noreferrer">
+                        <img class= "vectorsi" src="./assets/images/insta.webp" alt="insta icon" /></a></li>
+            </ul>
+            </div>
+        </header>
 
-            <li><!--Link to contact info section-->
-                <a href="#contact-info">Contact Me</a>
-            </li>
-
-            <li><!--Link to public-facing resume-->
+        <!--Nav bar located on left side displayed vertical-->
+        <nav>
+            <h1>MM</h1>
+            <div>
+                <a href="javascript:openExperience()">Experience</a>
+                <a href="javascript:openPortfolio()">Portfolio</a>
+                <a href="javascript:openContact()">Contact</a>
                 <a href="https://drive.google.com/file/d/1qprEEDKnVcKPbPyCkQJWMmPMg8JAkL3x/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
-            </li>
-        </ul>
-    </nav>
-    
-    <!--Header section containing picture backround, headshot and catch phrase-->
-    <header class="post-nav" alt="wood planks">
-        <!--Headshot picture-->
-        <img class= "me" src="./assets/images/headshot.jpg" alt="Stud muffin"/>
-    </header>
+            </div>
+        </nav>
 
-    <!--About me section-->
-    <section id="about-me" class="content">
-        <h2 class="body-headings">About Me:</h2>
-        <article class="bio">
-            <!--Bio-->
-            <p>
-                Hello! My name is Mike and I am an IT guy. During my younger years, I lived in the Chicagoland area and loved going to Cubs games. 
-                After high school, I attended Illinois State University where I studied Computer Systems Technology and Business Administration. 
-                I earned a Bachelor’s of Science and minor in the two subjects. <br><br> I am now the Product Owner for a Voice Provisioning team at an insurance company. 
-                I oversee 30 employees and over 300,000 telephony endpoints! In an effort to expand my IT toolbelt, I decided to attend the SMU Coding Bootcamp for Full Stack Web Development. 
-                So far, I am loving the class and hope to work with a development team as part of my full-time job! 
-                </p>
-        </article>
-    </section>
-
-    <!--Projects section with articles for each project-->
-    <section id="projects" class="content">        
-        <h2 class="body-headings">Stuff I've Been Working On:</h2>
-        
-        <!--Audi A3 article-->
-        <article class="audi">
-            <!--Image of car-->
-            <img class= "me" src="./assets/images/audi.JPG" alt="Back 1/3 of car being sprayed with water" /> 
-            <h3>Audi A3</h3>
-            <h4>Custom Automobile</h4>   
-            <!--Link to google drive pictures-->
-            <a href="https://drive.google.com/drive/folders/1078r7lC-UDn5FYQvPYit5GpIZQdufdnr?usp=sharing">Click to open Google Drive</a>          
-        </article>
-       
-        <!--Code Refractor article-->
-        <article class="refractor">
-            <!--Screenshot of website-->
-            <img class= "me" src="./assets/images/codeRefractor.png" alt="Screenshot of website. Navigation bar at top, image of people working in confrence room on bottom" />
-            <h3>Code Refractor</h3>
-            <h4>HTML, CSS</h4>
-            <!--Link to Github-->
-            <a href="https://github.com/MikeMallonIT/TEAMHonda">Click to open Github</a>
-        </article>
-
-        <!--Speaker Breafcase article-->
-        <article class="speaker">
-            <!--Picture of briefcase-->
-            <img class= "me" src="./assets/images/speaker.JPG" alt="A black leather briefcase with speakers in it" />
-            <h3>Speaker Breafcase</h3>
-            <h4>12v, HiFi Audio</h4>
-            <!--Link to Google Drive-->
-            <a href="https://github.com/MikeMallonIT/TEAMHonda">Click to open Google Drive</a>
-        </article>
-
-        <!--TEAM Honda ISU project-->
-        <article class="honda">
-            <!--Screenshot of website-->
-            <img class="me" src="./assets/images/TEAMHonda.png" alt="Website with navigation bar at top and picture of a car" />
-            <h3>TEAM Honda (ISU)</h3>
-            <h4>HTML, CSS, PHP</h4>   
-            <!--Link to Github-->
-            <a href="https://github.com/MikeMallonIT/HW1-CodeRefractor">Click to open Github</a>
-        </article>
-    </section>
-
-    <!--Footer with my contact information-->
-    <footer id="contact-info" class="content">
-        <h2 class="body-headings">Let's Keep In Touch</h2>
-        <div class="footer">
-        <ul>
-            <li>
-                
-                <a href="tel: 18476367685"><img class= "vectors" src="./assets/images/phone.png" alt="phone icon" /></a></li>
-            <li>
-                
-                <a href="mailto: mike@mallonit.com"><img class= "vectors" src="./assets/images/email.png" alt="email icon" /></a></li>
-            <li>
-                
-                <a href="https://github.com/MikeMallonIT/" target="_blank" rel="noopener noreferrer">
-                    <img class= "vectors" src="./assets/images/github.png" alt="github icon" /></a></li>
-            <li>
-                
-                <a href="https://www.linkedin.com/in/michael-mallon-it-guy/" target="_blank" rel="noopener noreferrer">
-                    <img class= "vectors" src="./assets/images/new-linkedin-logo-white-black-png.png" alt="linkedin icon" /></a></li>
-            <li>
-                
-                <a href="https://www.instagram.com/mallon127/" target="_blank" rel="noopener noreferrer">
-                    <img class= "vectors" src="./assets/images/insta.webp" alt="insta icon" /></a></li>
-
-        </ul>
+        <!--Text in the middle of the screen with "Hello"-->
+        <div id="centerText">
+            <div id="hello">
+                <h1>Hello!</h1>
+            </div>
+            <div id="info">
+                <p>I am a Agile Product Owner, Full Stack Web Developer and experienced Infrastructure Analyst with a passion for Servant Leadership, fast cars and golf.</p>
+            </div>
         </div>
-    </footer>
-</body>
+
+        <div class="hidden" id="contact">
+            <a href="javascript:closeContact()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
+            <div id="contactInfo">
+                    <img class= "me" src="./assets/images/headshot.jpg" alt="Stud muffin"/>
+                    <h1>Let's get in touch!</h1>
+                    <a href="tel: 18476367685">847.636.7685</a>
+                    <p></p>
+                    <a href="mailto: mike@mallonit.com">mike@mallonIT.com</a>
+                    <p></p>
+                    <a href="https://www.linkedin.com/in/michael-mallon-it-guy/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="hidden" id="experience">
+            <a href="javascript:closeExperience()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
+            <div id="padded">
+                <h1>Seasoned IT Professional</h1>
+                <p></p>
+                <p>Hello and thank you for visiting my website! I am a Certified Product owner and aspiring Full Stack developer. Currently, I am enrolled in Southern Methodist’s Coding Bootcamp where I am learning how to write server-side JavaScript and eye-catching front end.
+                </p><p>
+                    I graduated from Illinois State University with an undergraduate degree in Computer Systems Technology and a minor in Business Administration. During my undergrad years, I focused on infrastructure concepts such as server, storage and networking. I also received first-hand experience with those topics during my internship; which you can read more about in my resume!
+                </p><p>  
+                    After college, I sighed on as a full-time Infrastructure Analyst on a VoIP provisioning team. We manage  hundreds of thousands telephony endpoints across the enterprise. Shortly after signing onto the team I  learned about the Agile Mindset, Scrum and Product Ownership. I was promoted to Product Owner in 2019, relocated to the DFW Metroplex and have been overseeing the technical operations of my team since then.
+                </p><p>  
+                    My interested outside of the office include working on cars and driving anything I can get my hands on! Off-road and out of the garage, you can find me on the golf course and at home spending time with my rambunctious golden retriever.
+                </p>  
+            </div>
+        </div>
+
+        <div class="hidden" id="portfolio">
+            
+            <div id="portContent">
+                <a href="javascript:closePortfolio()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
+                <div id="portHeader">
+                    <h1>Mike's Projests</h1>
+                        
+                </div>
+
+                <div class="project" id="project1">
+                    <div class="hidden" id=projectInfo1>
+                        <a href="javascript:closeProjects()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
+                        <a href="https://github.com/MikeMallonIT/HW6-WeatherDashboard/" target="_blank" rel="noopener noreferrer">
+                            <img class= "git" src="./assets/images/github.png" alt="github icon" /></a></li>
+                    </div>
+
+                    <a href="javascript:openProject1()">
+                        <div id="projectDescription">
+                            <h2>Weather Dashboard</h2>
+                            <p>Website that calls the Open Weather API, saves your recently viewed cities and displays current and 5 day weather forcasts.</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="project" id="project2">
+                    <div class="hidden" id=projectInfo2>
+                        <a href="javascript:closeProjects()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
+                        <a href="https://github.com/MikeMallonIT/Project1-DFWHomeTracker/" target="_blank" rel="noopener noreferrer">
+                            <img class= "git" src="./assets/images/github.png" alt="github icon" /></a></li>
+                    </div>
+
+                    <a href="javascript:openProject2()">
+                        <div id="projectDescription">
+                            <h2>DFW Home Finder</h2>
+                            <p>Real Estate application that allows users to save journal entries related to houses they are intrested in.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project" id="project3">
+                    <div class="hidden" id=projectInfo3>
+                        <a href="javascript:closeProjects()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
+                        <a href="https://github.com/MikeMallonIT/HW4-CodeQuiz" target="_blank" rel="noopener noreferrer">
+                            <img class= "git" src="./assets/images/github.png" alt="github icon" /></a></li>
+                    </div>
+
+                    <a href="javascript:openProject3()">
+                        <div id="projectDescription">
+                            <h2>Coding Quiz</h2>
+                            <p>Educational JavaScript quiz website that showcases client-side concepts.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project" id="project4">
+                    <div class="hidden" id=projectInfo4>
+                        <a href="javascript:closeProjects()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
+                        <a href="https://github.com/MikeMallonIT/HW3-PasswordGenerator/" target="_blank" rel="noopener noreferrer">
+                            <img class= "git" src="./assets/images/github.png" alt="github icon" /></a></li>
+                    </div>
+
+                    <a href="javascript:openProject4()">
+                        <div id="projectDescription">
+                            <h2>Random Password Generator</h2>
+                            <p>Create unique passwords with specific peramentes of the user's choice.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>
+
