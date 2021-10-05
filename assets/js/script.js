@@ -8,7 +8,11 @@
   var project4 = document.getElementById("projectInfo4");
 
 function openContact(){
+    closeExperience();
+    closeProjects();
+    closePortfolio();
     contactDiv.setAttribute("class", "contact");
+
 }
 
 function closeContact(){
@@ -16,7 +20,11 @@ function closeContact(){
 }
 
 function openExperience(){
+    closeContact();
+    closeProjects();
+    closePortfolio();
     experienceDiv.setAttribute("class", "experience");
+
 }
 
 function closeExperience(){
@@ -24,12 +32,15 @@ function closeExperience(){
 }
 
 function openPortfolio(){
+    closeContact();
+    closeExperience();
     portfolioDiv.setAttribute("class", "portfolio")
 }
 
 function closePortfolio(){
-    portfolioDiv.setAttribute("class", "hidden");
     closeProjects();
+    portfolioDiv.setAttribute("class", "hidden");
+
 }
 
 function openProject1(){
