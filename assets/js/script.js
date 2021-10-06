@@ -65,3 +65,14 @@ function closeProjects(){
     project3.setAttribute("class", "hidden");
     project4.setAttribute("class", "hidden");
 }
+
+function closeAll(){
+    project1.setAttribute("class", "hidden");
+    project2.setAttribute("class", "hidden");
+    project3.setAttribute("class", "hidden");
+    project4.setAttribute("class", "hidden");
+    closeExperience();
+    closeProjects();
+    closePortfolio();
+    closeContact()
+}
