@@ -12,6 +12,12 @@ body{
  
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url('../images/mobile.png');
+    }
+  }
+
 .overflow{
     overflow:auto;
 }
