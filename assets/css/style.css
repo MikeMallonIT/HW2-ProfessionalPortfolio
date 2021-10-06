@@ -15,6 +15,9 @@ body{
 @media only screen and (max-width: 600px) {
     body {
         background-image: url('../images/mobile.png');
+        background-attachment: scroll;
+        background-size: auto;
+        background-position: center;
     }
   }
 
