@@ -1,9 +1,6 @@
-html{
-    overflow: hidden;
-}
-
 body{
 
+    overflow: hidden;
     margin-top: -10px;
     margin-left: -4px;
     background-image: url('../images/danny-sleeuwenhoek-9uZX2taqn_k-unsplash.jpg');
@@ -12,6 +9,11 @@ body{
     background-size: cover;
     font-family: 'Roboto Condensed', sans-serif;
     margin-bottom: -5px;
+ 
+}
+
+.overflow{
+    overflow:auto;
 }
 
 a{
@@ -69,7 +71,7 @@ header{
 
 header p{
     position: fixed;
-    width: auto;
+    width: 125px;
     margin-left: 150px;
     margin-right: 200px;;
     margin-top: 50px;
@@ -114,8 +116,15 @@ header div ul li {
 
 #socials{
     float: right;
-
 }
+
+@media only screen and (max-width: 1070px) {
+    #socials {
+      float:left;
+      margin-left: 150px;
+      margin-top: 40px;
+    }
+  }
 
 .vectorsi {
     margin-top: -2.5px;
@@ -137,6 +146,12 @@ header div ul li {
     position: fixed;
     bottom: 0;
 }
+
+@media only screen and (max-width: 1070px) {
+    #centerText {
+    visibility: hidden;
+    }
+  }
 
 #hello{
     position:relative;
@@ -179,6 +194,12 @@ header div ul li {
     margin-left: 25%;
 }
 
+@media only screen and (max-width: 600px) {
+    .contact {
+        width: 200px;
+    }
+  }
+
 .hidden {
     visibility: hidden;
 	max-height: 0;
@@ -220,6 +241,15 @@ header div ul li {
     margin-left: 15%;
 }
 
+@media only screen and (max-width: 600px) {
+    .experience {
+        width: auto;
+        margin-left: 75px;
+        overflow-y: scroll;
+        margin-top: 10px;
+    }
+  }
+
 .me {
     height: 175px;
     width: 175px;
@@ -227,11 +257,24 @@ header div ul li {
     margin-right: 25px;
 }
 
+@media only screen and (max-width: 600px) {
+    .me {
+        height: 155px;
+        width: 155px;
+    }
+  }
+
 #contactInfo{
     padding: 75px;
     padding-top: 50px;
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    #contactInfo {
+        padding: 25px;
+    }
+  }
 
 .portfolio{
 
@@ -273,7 +316,7 @@ header div ul li {
 #projectDescription{
     
     visibility: hidden;
-    margin-top: 170px;
+    margin-top: 168px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;

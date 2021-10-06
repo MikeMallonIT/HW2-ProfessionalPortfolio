@@ -1,4 +1,5 @@
   //Display answers in the buttons
+  var body = document.getElementById("body");
   var contactDiv = document.getElementById("contact");
   var experienceDiv = document.getElementById("experience");
   var portfolioDiv = document.getElementById("portfolio");
@@ -7,12 +8,19 @@
   var project3 = document.getElementById("projectInfo3");
   var project4 = document.getElementById("projectInfo4");
 
+function overflow(){
+    body.setAttribute("class", "overflow");
+}
+
+function hideOverflow(){
+    body.setAttribute("class", "");
+}
+
 function openContact(){
     closeExperience();
     closeProjects();
     closePortfolio();
     contactDiv.setAttribute("class", "contact");
-
 }
 
 function closeContact(){
@@ -20,6 +28,7 @@ function closeContact(){
 }
 
 function openExperience(){
+    overflow();
     closeContact();
     closeProjects();
     closePortfolio();
@@ -29,9 +38,11 @@ function openExperience(){
 
 function closeExperience(){
     experienceDiv.setAttribute("class", "hidden");
+    hideOverflow();
 }
 
 function openPortfolio(){
+    overflow();
     closeContact();
     closeExperience();
     portfolioDiv.setAttribute("class", "portfolio")
@@ -39,6 +50,7 @@ function openPortfolio(){
 
 function closePortfolio(){
     closeProjects();
+    
     portfolioDiv.setAttribute("class", "hidden");
 
 }
