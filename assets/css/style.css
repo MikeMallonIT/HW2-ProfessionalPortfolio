@@ -4,7 +4,7 @@ body{
     margin-top: -10px;
     margin-left: -4px;
     background-image: url('../images/danny-sleeuwenhoek-9uZX2taqn_k-unsplash.jpg');
-    background-attachment: fixed;
+    background-attachment:fixed;
     background-position: center;
     background-size: cover;
     font-family: 'Roboto Condensed', sans-serif;
@@ -79,7 +79,7 @@ header{
 
 
 header p{
-    position: fixed;
+    position:absolute;
     width: 125px;
     margin-left: 150px;
     margin-right: 200px;;
@@ -149,11 +149,10 @@ header div ul li {
 #centerText{
 
     margin-left: 30%;
-    margin-right: 50px;
-    margin-bottom: 28%;
+    margin-top: 10%;
     width: 700px;
-    position: fixed;
-    bottom: 0;
+    position:absolute;
+
 }
 
 @media only screen and (max-width: 1070px) {
@@ -384,7 +383,7 @@ header div ul li {
 #project2:hover #projectDescription { visibility: visible; }
 
 #project3{
-    background-image: url('../images/projects/quiz.png');
+    background-image: url('../images/projects/noteTaker.png');
     background-position: center;
     background-size:contain;
     filter: grayscale(100%);
@@ -394,7 +393,7 @@ header div ul li {
 #project3:hover #projectDescription { visibility: visible; }
 
 #project4{
-    background-image: url('../images/projects/password.png');
+    background-image: url('../images/projects/employeeManager.png');
     background-position: center;
     background-size:contain;
     filter: grayscale(100%);
@@ -403,3 +402,45 @@ header div ul li {
 
 #project4:hover{ filter:none; }
 #project4:hover #projectDescription { visibility: visible; }
+
+
+
+
+
+
+
+
+
+
+
+.projectHeroku{
+    height: 253px;
+    width: 450px;
+    margin: 0px;
+    border-radius: 15px;
+    border: black solid 2px;
+}
+
+.projectHeroku h2{
+
+    width: auto;
+    margin-bottom: -17px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.projectHeroku p{
+
+    width: auto;
+    font-size: smaller;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.hero {
+    height: 75px;
+    width: 75px;
+    display:block;
+    margin:auto;
+    padding-top: 50px;
+}
