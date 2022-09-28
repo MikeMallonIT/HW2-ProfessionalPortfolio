@@ -224,7 +224,7 @@ header p{
         margin-top: 65px;
     }
     .nav{
-        height: 500%;
+        height: 100%;
         min-width: 10%;
 
     }
@@ -263,7 +263,7 @@ header p{
     }
 
     .nav{
-        height: 500%;
+        height: 100%;
         min-width: 15%;
 
     }
@@ -283,12 +283,14 @@ header p{
 @media only screen and (max-width: 600px) {
     .nav {
         min-width: 20%;
+        min-height: 150%;
     }
 }
 
 @media only screen and (max-width: 450px) {
     .nav {
         min-width: 25%;
+        min-height: 200%;
     }
 }
 
