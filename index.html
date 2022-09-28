@@ -26,7 +26,7 @@
 
     </head>
     <body id="body">
-        <!--Top header with name and socials-->
+        <!--Top header with name and links to socials-->
         <header>
             <p>Mike Mallon</p>
             <!--links to socials-->
@@ -49,30 +49,30 @@
         </header>
 
         <!--Nav bar located on left side displayed vertical-->
-        <nav>
-            <a href="javascript:closeAll()">
-            <h1>MM</h1>
-            </a>
+        <div class="nav">
+            <a href="javascript:closeAll()"><h1>MM</h1></a>
             <div>
-                <!--<a href="javascript:openExperience()">Experience</a>
-                <a href="javascript:openPortfolio()">Portfolio</a>-->
+                <!--Nav bar link open contact info window-->
                 <a href="javascript:openContact()">Contact</a>
+                <!--Nav bar link open resume new tab-->
                 <a href="https://drive.google.com/file/d/1qprEEDKnVcKPbPyCkQJWMmPMg8JAkL3x/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
-        </nav>
+        </div>
 
         <!--Text in the middle of the screen with "Hello"-->
         <div id="centerText">
             <div id="hello">
                 <h1>Hello!</h1>
             </div>
+            <!--Text in the middle of the screen with introduction-->
             <div id="info">
                 <p>I am an Agile Product Owner, Full Stack Web Developer and seasoned Technologist with a passion for Servant Leadership, fast cars and golf.</p>
             </div>
         </div>
 
+        <!--Contact info div-->
         <div class="hidden" id="contact">
-            <a href="javascript:closeContact()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
+            <a href="javascript:closeContact()"><img class="closeButton" src="./assets/images/icons8-circled-x-100.png"></a>
             <div id="contactInfo">
                     <img class= "me" src="./assets/images/headshot.jpg" alt="Stud muffin"/>
                     <h1>Let's get in touch!</h1>
@@ -84,99 +84,7 @@
             </div>
         </div>
 
-        <div class="hidden" id="experience">
-            <a href="javascript:closeExperience()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
-            <div id="padded">
-                <h1>A Seasoned IT Professional</h1>
-                <p></p>
-                <p>Hello and thank you for visiting my website! I am a Certified Product owner and aspiring Full Stack developer. Currently, I am enrolled in Southern Methodist’s Coding Bootcamp where I am learning how to write server-side JavaScript and eye-catching front end.
-                </p><p>
-                    I graduated from Illinois State University with an undergraduate degree in Computer Systems Technology and a minor in Business Administration. During my undergrad years, I focused on infrastructure concepts such as server, storage and networking. I also received first-hand experience with those topics during my internship; which you can read more about in my resume!
-                </p><p>  
-                    After college, I sighed on as a full-time Infrastructure Analyst on a VoIP provisioning team. We manage  hundreds of thousands telephony endpoints across the enterprise. Shortly after signing onto the team I  learned about the Agile Mindset, Scrum and Product Ownership. I was promoted to Product Owner in 2019, relocated to the DFW Metroplex and have been overseeing the technical operations of my team since then.
-                </p><p>  
-                    My interested outside of the office include working on cars and driving anything I can get my hands on! Off-road and out of the garage, you can find me on the golf course and at home spending time with my rambunctious golden retriever.
-                </p>  
-            </div>
-        </div>
-
-        <div class="hidden" id="portfolio">
-            
-            <div id="portContent">
-                <a href="javascript:closePortfolio()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
-                <div id="portHeader">
-                    
-                        
-                </div>
-
-                <div class="project" id="project1">
-                    <div class="hidden" id=projectInfo1>
-                        <a href="javascript:closeProjects()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
-                        <a href="https://github.com/MikeMallonIT/HW6-WeatherDashboard/" target="_blank" rel="noopener noreferrer">
-                            <img class= "git" src="./assets/images/github.png" alt="github icon" /></a></li>
-                    </div>
-
-                    <a href="javascript:openProject1()">
-                        <div id="projectDescription">
-                            <h2>Weather Dashboard</h2>
-                            <p>Website that calls the Open Weather API, saves your recently viewed cities and displays current and 5 day weather forcasts.</p>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="project" id="project2">
-                    <div class="hidden" id=projectInfo2>
-                        <a href="javascript:closeProjects()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
-                        <a href="https://github.com/MikeMallonIT/Project1-DFWHomeTracker/" target="_blank" rel="noopener noreferrer">
-                            <img class= "git" src="./assets/images/github.png" alt="github icon" /></a></li>
-                    </div>
-
-                    <a href="javascript:openProject2()">
-                        <div id="projectDescription">
-                            <h2>DFW Home Finder</h2>
-                            <p>Real Estate application that allows users to save journal entries related to houses they are intrested in.</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="projectHeroku" id="project3">
-                    <div class="hidden" id=projectInfo3>
-                        <a href="javascript:closeProjects()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
-
-
-                        <a href="https://github.com/MikeMallonIT/HW11-NoteTaker" target="_blank" rel="noopener noreferrer">
-                            <img class= "hero" src="./assets/images/github.png" alt="github icon"></a>
-
-
-                        <a href="https://mm-hw11-notetaker.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                            <img class= "hero" src="./assets/images/heroku-icon.svg" alt="heroku icon" /></a></li>
-                    </div>
-
-                    <a href="javascript:openProject3()">
-                        <div id="projectDescription">
-                            <h2>Note Taker</h2>
-                            <p>Deployed application using Heroku used for taking notes</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="project" id="project4">
-                    <div class="hidden" id=projectInfo4>
-                        <a href="javascript:closeProjects()"><img class="close" src="./assets/images/icons8-circled-x-100.png"></a>
-                        <a href="https://github.com/MikeMallonIT/HW12-EmployeeTracker/" target="_blank" rel="noopener noreferrer">
-                            <img class= "git" src="./assets/images/github.png" alt="github icon" /></a></li>
-                    </div>
-
-                    <a href="javascript:openProject4()">
-                        <div id="projectDescription">
-                            <h2>Employee Tracker</h2>
-                            <p>CLI based application used for managing a company's employees</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+ 
         
         <script src="./assets/js/script.js"></script>
     </body>
